@@ -43,6 +43,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Digite seu email"
+              data-id="email-field"
             />
           </div>
           <div class="mb-3">
@@ -52,14 +53,12 @@
               class="form-control"
               id="exampleInputPassword1"
               placeholder="Digite sua senha"
+              data-id="password-field"
             />
           </div>
-          <a
-            role="button"
-            href="pages/inicio/inicio.html"
-            class="btn btn-primary w-100 mt-2"
-            >Entrar</a
-          >
+          <button data-id="login-button" class="login-btn" type="button">
+            Entrar
+          </button>
           <p class="text-center mt-3">
             <a
               class="link-opacity-100-hover"
@@ -72,16 +71,25 @@
       </section>
     </main>
     <footer>
-      <p class="text-center position-fixed w-100 bottom-0 d-flex align-items-center justify-content-center gap-1">
+      <p
+        class="text-center position-fixed w-100 bottom-0 d-flex align-items-center justify-content-center gap-1"
+      >
         <span class="fs-5">©</span>
         CarePulse
       </p>
     </footer>
+    <dialog class="dialog" data-id="dialog">
+      <h2>Olá! Seja bem vindo ao CarePulse!</h2>
+      <p>Por favor, use estes dados para fazer login:</p>
+      <p>Email: email@email.com</p>
+      <p>Password: 123456</p>
+      <button class="btn btn-primary mt-2" data-id="close-dialog">Fechar</button>
+    </dialog>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
