@@ -1,0 +1,116 @@
+.main-content {
+  margin-bottom: 3rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.wrapper-child {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.points {
+  background-color: #0d6efd;
+  color: white;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border-radius: 5px;
+}
+
+.status {
+  background-color: #51c560;
+  color: white;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  border-radius: 5px;
+}
+
+.rewards-icon {
+  background-color: #51c560;
+  width: 50px;
+  height: 50px;
+  padding-inline: 1rem;
+  border-radius: 100%;
+}
+.description {
+  font-size: 12px;
+}
+
+.achievements-icon {
+  background-color: rgb(238, 177, 10);
+  width: 50px;
+  height: 50px;
+  padding-inline: 1rem;
+  border-radius: 100%;
+}
+
+.logo {
+  width: 145px;
+}
+
+.user-logo {
+  width: 35px;
+}
+
+.footer-link {
+  padding: 0.75rem;
+  color: white;
+  font-size: 0.75rem;
+  transition: scale 0.3s ease;
+}
+
+.footer-link:hover {
+  scale: 1.1;
+}
+
+.footer-link-icon {
+  width: 25px;
+}
+
+.text-size {
+  font-size: 0.8rem;
+}
+
+.score {
+  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+}
+
+.chart {
+  width: 65px;
+}
+
+.personal-data-icon {
+  width: 35px;
+  border-radius: 100%;
+}
+
+.go-to-history-btn {
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .wrapper-child {
+    max-width: 60%;
+  }
+}
