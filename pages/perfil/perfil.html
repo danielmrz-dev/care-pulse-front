@@ -27,13 +27,13 @@
       />
     </header>
     <main class="d-flex align-items-center justify-content-center flex-wrap main-content">
-      <div class="w-100 d-flex flex-column gap-4">
-        <div class="col-sm-6 w-100 shadow-sm">
-          <h5 class="card-title m-0 pb-2">Perfil</h5>
+      <div class="wrapper">
+        <div class="wrapper-child">
           <div class="card p-3 d-flex flex-column gap-3">
+            <h5 class="card-title m-0 pb-2">Perfil</h5>
             <div class="card-body d-flex flex-column gap-2 p-0">
               <div class="d-flex flex-column align-items-center gap-2 text-size">
-                <img src="../../assets/images/avatar-avatar.png" alt="" class="rounded-circle w-25">
+                <img src="../../assets/images/avatar-avatar.png" alt="" class="rounded-circle avatar">
                 <h3 class="card-title m-0">João da Silva</h3>
                 <p class="card-text m-0 bg-primary rounded text-white px-3 py-1">Nível atual: 5</p>
                 <p class="card-text m-0">Pontos totais: <strong>500</strong></p>
@@ -41,7 +41,7 @@
             </div>
           </div>
         </div>
-        <div class="card p-3 d-flex flex-column gap-3 shadow-sm">
+        <div class="wrapper-child card p-3 d-flex flex-column gap-3 shadow-sm">
           <div class="card-body d-flex flex-column gap-2 p-0">
             <div class="d-flex flex-column align-items-center gap-2 text-size">
               <h5 class="card-title m-0">Dados pessoais</h5>
@@ -69,13 +69,43 @@
             </div>
           </div>
         </div>
+        <div class="wrapper-child card p-3 d-flex flex-column gap-3 shadow-sm">
+          <div class="card-body d-flex flex-column gap-2 p-0">
+            <div class="d-flex flex-column align-items-center gap-2 text-size">
+              <h5 class="card-title m-0">Informações de saúde</h5>
+              <div class="d-flex w-100 gap-2">
+                <img src="../../assets/images/heart-pulse-solid-full.svg" alt="" class="personal-data-icon">
+                <div>
+                  <p class="card-text opacity-50 m-0">Plano de saúde</p>
+                  <p class="card-title m-0">João da Silva</p>
+                </div>
+              </div>
+              <div class="d-flex w-100 gap-2">
+                <img src="../../assets/images/list-solid-full.svg" alt="" class="personal-data-icon">
+                <div class="d-flex align-items-center w-100 justify-content-between">
+                  <p class="card-text opacity-50 m-0">Histórico de consultas</p>
+                  <button class="go-to-history-btn" type="button">
+                    Ver histórico
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         
     </main>
     <footer>
       <div
         class="bg-primary w-100 position-fixed bottom-0 start-0 rounded-top d-flex justify-content-around"
       >
-        <a href="" class="footer-link d-flex flex-column align-items-center text-decoration-none">
+        <a href="../inicio/inicio.html" class="footer-link d-flex flex-column align-items-center text-decoration-none">
+          <img
+            class="footer-link-icon"
+            src="../../assets/images/house-solid-full.svg"
+          />
+          Início
+        </a>
+        <a href="./../consultas/consultas.html" class="footer-link d-flex flex-column align-items-center text-decoration-none">
           <img
             class="footer-link-icon"
             src="../../assets/images/user-doctor-solid-white.svg"
@@ -89,7 +119,7 @@
           />
           Recompensas
         </a>
-        <a href="" class="footer-link d-flex flex-column align-items-center text-decoration-none">
+        <a href="./../perfil/perfil.html" class="footer-link d-flex flex-column align-items-center text-decoration-none">
           <img
             class="footer-link-icon"
             src="../../assets/images/circle-user-solid-white.svg"
