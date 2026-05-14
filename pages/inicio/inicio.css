@@ -52,6 +52,29 @@
   width: 20px;
 }
 
+.modal-trajeto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.modal-trajeto::backdrop {
+  background-color: rgba(0, 0, 0, 0.336);
+}
+
+.modal-btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d6efd;
+  color: white;
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .main-content {
     display: flex;

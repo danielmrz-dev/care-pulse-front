@@ -58,7 +58,7 @@
                 <p class="card-text m-0">Unidade Centro</p>
                 <p class="card-text m-0">Avenida Paulista, 555</p>
               </div>
-              <button class="btn btn-primary w-100 mt-3">Ver trajeto</button>
+              <button class="btn btn-primary w-100 mt-3" type="button" data-id="open-modal">Ver trajeto</button>
             </div>
           </div>
         </div>
@@ -146,6 +146,17 @@
         </a>
       </div>
     </footer>
+    <dialog data-id="modal" class="modal-trajeto">
+      <div class="d-flex flex-column gap-4">
+        <h2 class="fs-2 m-0">
+          Trajeto
+        </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8697.822322678245!2d-46.6531675293405!3d-23.56902509391217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bf2807c9c3%3A0xb9876250733355fc!2sAv.%20Paulista%2C%20555%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001311-000!5e0!3m2!1spt-BR!2sbr!4v1778788660593!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button class="modal-btn" data-id="close-modal" type="button">Fechar</button>
+      </div>
+    </dialog>
+
+    <script type="module" src="./../../js/modal-manager.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
